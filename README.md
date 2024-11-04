@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Personal Finance Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and efficient personal finance tracking application built using **React** and **Firebase**. This project enables users to manage their personal finances effectively with features like authentication, transaction tracking, data visualization, and personalized data storage. 
 
-## Available Scripts
+With this application, users can easily track their expenses and income, visualize financial data through charts, and analyze their spending patterns. The user interface is designed to be intuitive, leveraging **Ant Design** for sleek and responsive components.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**: Secure login and registration using Firebase Authentication.
+- **Personalized Dashboard**: Each user has a personal dashboard with their own financial data.
+- **Transaction Tracking**: Easily add, view, and manage transactions (income and expenses).
+- **Data Visualization**: Charts and graphs to give insights into spending and income distribution.
+- **Export & Import**: Import and export transactions data in convenient formats (CSV).
+- **Tables and Filters**: Filter and sort transaction data for detailed financial analysis.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Setup
 
-### `npm test`
+Follow these steps to set up and run the project:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Firebase Setup
+   - Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+   - Enable **Firestore Database** and **Authentication** (Google, Email/Password) for the project.
+   - Copy the Firebase config object and paste it in a `.env` file in the project.
 
-### `npm run build`
+### 2. React Router and Landing Page
+   - Set up **React Router** for navigation between pages.
+   - Create a basic **Landing Page** to welcome users and guide them to login/register.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Authentication Using Firebase
+   - Implement authentication using Firebase’s authentication service.
+   - Add functionality to **Log in** and **Register** new users.
+   - Store user data securely in Firestore.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Login and Create User Document
+   - After user registration, create a user document in Firestore with user-specific data.
+   - Include user ID, name, and any other necessary fields for future reference.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 5. React Firebase Hooks and Dashboards
+   - Use **React Firebase Hooks** to simplify Firebase authentication and Firestore data fetching.
+   - Design a **Dashboard** where users can view their transactions and other financial data.
 
-### `npm run eject`
+### 6. Ant Design and Dashboard
+   - Integrate **Ant Design** components for a professional and responsive UI.
+   - Use Ant Design’s table, forms, and chart components to organize data effectively in the dashboard.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 7. Adding Transactions in Firebase & Fetching them
+   - Add functionality for users to create new transactions (income/expense).
+   - Store transaction data in Firestore and fetch it in real-time to display on the dashboard.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 8. Creating Tables and Filters
+   - Use tables to organize transactions data.
+   - Implement filters for date, category, and amount to help users analyze their financial records more easily.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 9. Export and Import
+   - Allow users to export their transaction data as a CSV file for backup.
+   - Implement functionality to import data, allowing users to upload their previous records.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 10. Charts and PieChart
+   - Use charting libraries to display data visually.
+   - Add a **Pie Chart** to show the breakdown of expenses by category.
+   - Include **Bar or Line Charts** for monthly or yearly financial summaries.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React** - Frontend framework for building the user interface.
+- **Firebase** - Backend-as-a-Service (BaaS) for authentication, database, and data storage.
+- **React Router** - For managing navigation in the application.
+- **Ant Design** - UI component library for a consistent and modern interface.
+- **Chart.js or Recharts** - For data visualization, including Pie and Bar charts.
+- **React Firebase Hooks** - Custom hooks for Firebase that simplify API integration.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation and Usage
 
-### Analyzing the Bundle Size
+1. **Clone the repository:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   git clone https://github.com/yourusername/personal-finance-tracker.git
+   cd personal-finance-tracker
