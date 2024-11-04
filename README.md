@@ -75,6 +75,10 @@ Follow these steps to set up and run the project:
 
 ---
 
+## Project Overview
+
+https://github.com/user-attachments/assets/ed71fb23-6bd2-4330-b7e7-33e828683db9
+
 ## Installation and Usage
 
 1. **Clone the repository:**
@@ -82,3 +86,17 @@ Follow these steps to set up and run the project:
    ```bash
    git clone https://github.com/yourusername/personal-finance-tracker.git
    cd personal-finance-tracker
+   
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    
+3.  **Set up firebase configuration**
+
+    - Copy your Firebase configuration settings to a .env file.
+   
+4.  **Run the project**
+
+    ```bash
+    npm start
